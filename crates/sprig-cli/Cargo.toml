@@ -1,0 +1,19 @@
+[package]
+name = "sprig-cli"
+description = "The `sprig` shell and MCP server for sprigdb."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "sprig"
+path = "src/main.rs"
+
+[dependencies]
+# Planned (add each one back when the first code uses it):
+# sprigdb = { path = "../sprigdb" }
+
+[lints]
+workspace = true

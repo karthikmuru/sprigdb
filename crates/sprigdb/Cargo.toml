@@ -1,0 +1,16 @@
+[package]
+name = "sprigdb"
+description = "A small, readable, embedded SQL database where agents work in branches."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+readme = "../../README.md"
+
+[dependencies]
+# Planned (add each one back when the first code uses it):
+# sprig-exec = { path = "../sprig-exec" }
+
+[lints]
+workspace = true

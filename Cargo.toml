@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/sprig-pager",
+    "crates/sprig-btree",
+    "crates/sprig-sql",
+    "crates/sprig-exec",
+    "crates/sprigdb",
+    "crates/sprig-cli",
+]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2021"
+rust-version = "1.80"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/karthikmuru/sprigdb"
+
+# Readable-Rust rules that a tool can check. See CONTRIBUTING.md for the rest.
+[workspace.lints.rust]
+# `unsafe` is denied everywhere. Only sprig-pager may opt out, with a comment
+# on every block saying why it is sound.
+unsafe_code = "deny"
+missing_docs = "warn"
+
+[workspace.lints.clippy]
+# Prefer plain, explicit code over clever code.
+needless_lifetimes = "warn"
+redundant_closure_for_method_calls = "warn"

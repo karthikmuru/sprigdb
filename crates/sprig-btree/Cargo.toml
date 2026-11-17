@@ -1,0 +1,15 @@
+[package]
+name = "sprig-btree"
+description = "The copy-on-write B+tree behind sprigdb's tables, snapshots and branches."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+# Planned (add each one back when the first code uses it):
+# sprig-pager = { path = "../sprig-pager" }
+
+[lints]
+workspace = true

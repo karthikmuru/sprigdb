@@ -1,0 +1,9 @@
+[book]
+title = "sprigdb"
+description = "Docs and book for sprigdb, a small, readable SQL database where agents work in branches."
+authors = ["The sprigdb contributors"]
+language = "en"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/karthikmuru/sprigdb"
